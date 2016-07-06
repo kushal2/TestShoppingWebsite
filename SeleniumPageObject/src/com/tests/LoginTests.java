@@ -1,4 +1,4 @@
-package com.jass.tests;
+package com.tests;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -6,9 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.jass.common.CommonMethods;
-import com.jass.pageobject.HomePage;
-import com.jass.pageobject.LoginPage;
+
+import com.common.CommonMethods;
+import com.pageobject.HomePage;
+import com.pageobject.LoginPage;
 
 public class LoginTests  {
 	private WebDriver driver;
@@ -39,7 +40,7 @@ public class LoginTests  {
     LoginPage=new LoginPage(driver);
     String filepath=CM.pro("config.properties").getProperty("excel");
 	LoginPage.Login(CM.excel(0,1, 0, filepath), CM.excel(0,1, 1, filepath));
-	com.jass.pageobject.HomePage HomePage1 = new HomePage(driver);
+	com.pageobject.HomePage HomePage1 = new HomePage(driver);
 	CM.verifyText("Welcome to iBusiness");
 	HomePage1.clickLogOff();		
 	}

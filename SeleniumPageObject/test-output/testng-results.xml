@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="3" passed="1">
+<testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20155" started-at="2016-07-06T22:28:40Z" finished-at="2016-07-06T22:29:00Z">
+  <suite name="Default suite" duration-ms="15097" started-at="2016-07-06T22:35:42Z" finished-at="2016-07-06T22:35:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20155" started-at="2016-07-06T22:28:40Z" finished-at="2016-07-06T22:29:00Z">
-      <class name="com.jass.tests.LoginTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jass.tests.LoginTests@b97c004]" name="setUp" is-config="true" duration-ms="5718" started-at="2016-07-06T15:28:40Z" finished-at="2016-07-06T15:28:45Z">
+    <test name="Default test" duration-ms="15097" started-at="2016-07-06T22:35:42Z" finished-at="2016-07-06T22:35:57Z">
+      <class name="com.tests.CreateAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.CreateAccountTest@b97c004]" name="setUp" is-config="true" duration-ms="7039" started-at="2016-07-06T15:35:42Z" finished-at="2016-07-06T15:35:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testLogin()[pri:0, instance:com.jass.tests.LoginTests@b97c004]" name="testLogin" duration-ms="591" started-at="2016-07-06T15:28:45Z" finished-at="2016-07-06T15:28:46Z">
+        <test-method status="FAIL" signature="wrongfn()[pri:0, instance:com.tests.CreateAccountTest@b97c004]" name="wrongfn" duration-ms="782" started-at="2016-07-06T15:35:49Z" finished-at="2016-07-06T15:35:49Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: keys should be a string
@@ -21,8 +21,8 @@ Command duration or timeout: 47 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
 System info: host: 'apple', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir12728_10041}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2251a281fdd790a2a2184a87b27fe8ff]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir5724_3898}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2e637e19a333ca3e357e7e777f11f119]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: keys should be a string
@@ -32,8 +32,8 @@ Command duration or timeout: 47 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
 System info: host: 'apple', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir12728_10041}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2251a281fdd790a2a2184a87b27fe8ff
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir5724_3898}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2e637e19a333ca3e357e7e777f11f119
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -43,9 +43,15 @@ Session ID: 2251a281fdd790a2a2184a87b27fe8ff
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
-	at com.jass.pageobject.LoginPage.enterEmailID(LoginPage.java:31)
-	at com.jass.pageobject.LoginPage.Login(LoginPage.java:41)
-	at com.jass.tests.LoginTests.testLogin(LoginTests.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at com.common.CommonMethods.setValue(CommonMethods.java:139)
+	at com.pageobject.CreateAccountPageFactory.SignUp(CreateAccountPageFactory.java:53)
+	at com.tests.CreateAccountTest.wrongfn(CreateAccountTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -75,50 +81,38 @@ Session ID: 2251a281fdd790a2a2184a87b27fe8ff
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jass.tests.LoginTests@b97c004]" name="tearDown" is-config="true" duration-ms="1458" started-at="2016-07-06T15:28:46Z" finished-at="2016-07-06T15:28:47Z">
+        </test-method> <!-- wrongfn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.CreateAccountTest@b97c004]" name="tearDown" is-config="true" duration-ms="1106" started-at="2016-07-06T15:35:49Z" finished-at="2016-07-06T15:35:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jass.tests.LoginTests@b97c004]" name="setUp" is-config="true" duration-ms="4529" started-at="2016-07-06T15:28:47Z" finished-at="2016-07-06T15:28:52Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.CreateAccountTest@b97c004]" name="setUp" is-config="true" duration-ms="4483" started-at="2016-07-06T15:35:51Z" finished-at="2016-07-06T15:35:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLoginError()[pri:0, instance:com.jass.tests.LoginTests@b97c004]" name="testLoginError" duration-ms="946" started-at="2016-07-06T15:28:52Z" finished-at="2016-07-06T15:28:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginError -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jass.tests.LoginTests@b97c004]" name="tearDown" is-config="true" duration-ms="1008" started-at="2016-07-06T15:28:53Z" finished-at="2016-07-06T15:28:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jass.tests.LoginTests@b97c004]" name="setUp" is-config="true" duration-ms="4320" started-at="2016-07-06T15:28:54Z" finished-at="2016-07-06T15:28:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testLoginbadpass()[pri:0, instance:com.jass.tests.LoginTests@b97c004]" name="testLoginbadpass" duration-ms="594" started-at="2016-07-06T15:28:58Z" finished-at="2016-07-06T15:28:59Z">
+        <test-method status="FAIL" signature="wrongln()[pri:0, instance:com.tests.CreateAccountTest@b97c004]" name="wrongln" duration-ms="783" started-at="2016-07-06T15:35:55Z" finished-at="2016-07-06T15:35:56Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: keys should be a string
   (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 55 milliseconds
+Command duration or timeout: 47 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
 System info: host: 'apple', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir6916_23111}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: eda4fbd0a8433a9a6e34f80f3d10bd4a]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir13064_19749}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e82cccf3c9f0199bf69efa5afd8bee15]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: keys should be a string
   (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 55 milliseconds
+Command duration or timeout: 47 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
 System info: host: 'apple', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir6916_23111}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: eda4fbd0a8433a9a6e34f80f3d10bd4a
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir13064_19749}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e82cccf3c9f0199bf69efa5afd8bee15
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -128,9 +122,15 @@ Session ID: eda4fbd0a8433a9a6e34f80f3d10bd4a
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
-	at com.jass.pageobject.LoginPage.enterEmailID(LoginPage.java:31)
-	at com.jass.pageobject.LoginPage.Login(LoginPage.java:41)
-	at com.jass.tests.LoginTests.testLoginbadpass(LoginTests.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at com.common.CommonMethods.setValue(CommonMethods.java:139)
+	at com.pageobject.CreateAccountPageFactory.SignUp(CreateAccountPageFactory.java:53)
+	at com.tests.CreateAccountTest.wrongln(CreateAccountTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -160,12 +160,12 @@ Session ID: eda4fbd0a8433a9a6e34f80f3d10bd4a
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginbadpass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jass.tests.LoginTests@b97c004]" name="tearDown" is-config="true" duration-ms="957" started-at="2016-07-06T15:28:59Z" finished-at="2016-07-06T15:29:00Z">
+        </test-method> <!-- wrongln -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.CreateAccountTest@b97c004]" name="tearDown" is-config="true" duration-ms="869" started-at="2016-07-06T15:35:56Z" finished-at="2016-07-06T15:35:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.jass.tests.LoginTests -->
+      </class> <!-- com.tests.CreateAccountTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

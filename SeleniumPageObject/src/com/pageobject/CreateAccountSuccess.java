@@ -1,4 +1,4 @@
-package com.jass.pageobject;
+package com.pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

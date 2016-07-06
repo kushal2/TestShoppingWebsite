@@ -1,9 +1,9 @@
-package com.jass.pageobject;
+package com.pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import com.jass.common.CommonMethods;
+import com.common.CommonMethods;
 
 public class LoginPage  {
 	public CommonMethods CM;

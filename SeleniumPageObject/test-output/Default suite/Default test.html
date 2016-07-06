@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 06 15:28:40 PDT 2016</td>
+<td>Started on:</td><td>Wed Jul 06 15:35:42 PDT 2016</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20155 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15097 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,7 +75,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.jass.tests.LoginTests.testLogin()'><b>testLogin</b><br>Test class: com.jass.tests.LoginTests</td>
+<td title='com.tests.CreateAccountTest.wrongfn()'><b>wrongfn</b><br>Test class: com.tests.CreateAccountTest</td>
 <td><div><pre>org.openqa.selenium.WebDriverException: unknown error: keys should be a string
   (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
@@ -83,8 +83,8 @@ Command duration or timeout: 47 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
 System info: host: &apos;apple&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir12728_10041}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2251a281fdd790a2a2184a87b27fe8ff
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir5724_3898}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2e637e19a333ca3e357e7e777f11f119
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -94,9 +94,15 @@ Session ID: 2251a281fdd790a2a2184a87b27fe8ff
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
-	at com.jass.pageobject.LoginPage.enterEmailID(LoginPage.java:31)
-	at com.jass.pageobject.LoginPage.Login(LoginPage.java:41)
-	at com.jass.tests.LoginTests.testLogin(LoginTests.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at com.common.CommonMethods.setValue(CommonMethods.java:139)
+	at com.pageobject.CreateAccountPageFactory.SignUp(CreateAccountPageFactory.java:53)
+	at com.tests.CreateAccountTest.wrongfn(CreateAccountTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -121,16 +127,16 @@ Session ID: 2251a281fdd790a2a2184a87b27fe8ff
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div><a href='#' onClick='toggleBox("stack-trace510147134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace510147134'><pre>org.openqa.selenium.WebDriverException: unknown error: keys should be a string
+</pre></div><a href='#' onClick='toggleBox("stack-trace1048855692", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1048855692'><pre>org.openqa.selenium.WebDriverException: unknown error: keys should be a string
   (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 47 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
 System info: host: &apos;apple&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir12728_10041}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2251a281fdd790a2a2184a87b27fe8ff
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir5724_3898}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2e637e19a333ca3e357e7e777f11f119
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -140,9 +146,15 @@ Session ID: 2251a281fdd790a2a2184a87b27fe8ff
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
-	at com.jass.pageobject.LoginPage.enterEmailID(LoginPage.java:31)
-	at com.jass.pageobject.LoginPage.Login(LoginPage.java:41)
-	at com.jass.tests.LoginTests.testLogin(LoginTests.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at com.common.CommonMethods.setValue(CommonMethods.java:139)
+	at com.pageobject.CreateAccountPageFactory.SignUp(CreateAccountPageFactory.java:53)
+	at com.tests.CreateAccountTest.wrongfn(CreateAccountTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -169,18 +181,18 @@ Session ID: 2251a281fdd790a2a2184a87b27fe8ff
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
 <td>0</td>
-<td>com.jass.tests.LoginTests@b97c004</td></tr>
+<td>com.tests.CreateAccountTest@b97c004</td></tr>
 <tr>
-<td title='com.jass.tests.LoginTests.testLoginbadpass()'><b>testLoginbadpass</b><br>Test class: com.jass.tests.LoginTests</td>
+<td title='com.tests.CreateAccountTest.wrongln()'><b>wrongln</b><br>Test class: com.tests.CreateAccountTest</td>
 <td><div><pre>org.openqa.selenium.WebDriverException: unknown error: keys should be a string
   (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 55 milliseconds
+Command duration or timeout: 47 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
 System info: host: &apos;apple&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir6916_23111}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: eda4fbd0a8433a9a6e34f80f3d10bd4a
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir13064_19749}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e82cccf3c9f0199bf69efa5afd8bee15
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -190,9 +202,15 @@ Session ID: eda4fbd0a8433a9a6e34f80f3d10bd4a
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
-	at com.jass.pageobject.LoginPage.enterEmailID(LoginPage.java:31)
-	at com.jass.pageobject.LoginPage.Login(LoginPage.java:41)
-	at com.jass.tests.LoginTests.testLoginbadpass(LoginTests.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at com.common.CommonMethods.setValue(CommonMethods.java:139)
+	at com.pageobject.CreateAccountPageFactory.SignUp(CreateAccountPageFactory.java:53)
+	at com.tests.CreateAccountTest.wrongln(CreateAccountTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -217,16 +235,16 @@ Session ID: eda4fbd0a8433a9a6e34f80f3d10bd4a
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div><a href='#' onClick='toggleBox("stack-trace42544488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace42544488'><pre>org.openqa.selenium.WebDriverException: unknown error: keys should be a string
+</pre></div><a href='#' onClick='toggleBox("stack-trace696933920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace696933920'><pre>org.openqa.selenium.WebDriverException: unknown error: keys should be a string
   (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 55 milliseconds
+Command duration or timeout: 47 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
 System info: host: &apos;apple&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir6916_23111}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: eda4fbd0a8433a9a6e34f80f3d10bd4a
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir=C:\Users\Kushal\AppData\Local\Temp\scoped_dir13064_19749}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e82cccf3c9f0199bf69efa5afd8bee15
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -236,9 +254,15 @@ Session ID: eda4fbd0a8433a9a6e34f80f3d10bd4a
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
-	at com.jass.pageobject.LoginPage.enterEmailID(LoginPage.java:31)
-	at com.jass.pageobject.LoginPage.Login(LoginPage.java:41)
-	at com.jass.tests.LoginTests.testLoginbadpass(LoginTests.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at com.common.CommonMethods.setValue(CommonMethods.java:139)
+	at com.pageobject.CreateAccountPageFactory.SignUp(CreateAccountPageFactory.java:53)
+	at com.tests.CreateAccountTest.wrongln(CreateAccountTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -265,20 +289,7 @@ Session ID: eda4fbd0a8433a9a6e34f80f3d10bd4a
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
 <td>0</td>
-<td>com.jass.tests.LoginTests@b97c004</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.jass.tests.LoginTests.testLoginError()'><b>testLoginError</b><br>Test class: com.jass.tests.LoginTests</td>
-<td></td>
-<td>0</td>
-<td>com.jass.tests.LoginTests@b97c004</td></tr>
+<td>com.tests.CreateAccountTest@b97c004</td></tr>
 </table><p>
 </body>
 </html>

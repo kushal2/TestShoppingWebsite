@@ -1,4 +1,4 @@
-package com.jass.tests;
+package com.tests;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,11 +10,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.jass.common.CommonMethods;
-import com.jass.pageobject.CreateAccountPageFactory;
-import com.jass.pageobject.CreateAccountSuccess;
-import com.jass.pageobject.HomePage;
-import com.jass.pageobject.LoginPage;
+import com.common.CommonMethods;
+import com.pageobject.CreateAccountPageFactory;
+import com.pageobject.CreateAccountSuccess;
+import com.pageobject.HomePage;
+import com.pageobject.LoginPage;
 
 public class CreateAccountTest  {
 	Properties prop = new Properties();

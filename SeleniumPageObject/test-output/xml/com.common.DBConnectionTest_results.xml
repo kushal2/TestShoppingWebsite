@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="0.099">
+  <properties />
+            <testcase name="testDBConnection" time="0.099" classname="com.common.DBConnectionTest">
+                <failure type="java.sql.SQLException"
+                  message="Access denied for user &apos;qatest&apos;@&apos;localhost&apos; (using password: YES)"
+              >
+<![CDATA[java.sql.SQLException: Access denied for user 'qatest'@'localhost' (using password: YES)
+  com.mysql.jdbc.SQLError.createSQLException(SQLError.java:946)
+  com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+  com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:885)
+  com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3421)
+  com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1247)
+  com.mysql.jdbc.Connection.createNewIO(Connection.java:2775)
+  com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+  com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+  java.sql.DriverManager.getConnection(Unknown Source)
+  java.sql.DriverManager.getConnection(Unknown Source)
+  com.common.DBConnectionTest.testDBConnection(DBConnectionTest.java:26)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+  org.testng.TestRunner.privateRun(TestRunner.java:774)
+  org.testng.TestRunner.run(TestRunner.java:624)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+  org.testng.SuiteRunner.run(SuiteRunner.java:261)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+  org.testng.TestNG.run(TestNG.java:1048)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>

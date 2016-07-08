@@ -1,11 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
   
 <suite name="Suite1" verbose="1" >
- 
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.testng.reporters.FailedReporter"/>
+   </listeners>   
+
   <test name="Regression1">
     <classes>
-      <class name="com.jass.tests.LoginTests"/>
- 	  <class name="com.jass.tests.CreateAccountTest"/>
+      <class name="com.tests.LoginTests"/>
+ 	  <class name="com.tests.CreateAccountTest"/>
     </classes>
   </test>
   

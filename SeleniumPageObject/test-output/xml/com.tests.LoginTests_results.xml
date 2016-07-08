@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="8"
+           failures="4"
+           errors="0"
+           skipped="4"
+           time="30.228">
+  <properties />
+            <testcase name="tearDown" time="0.000" classname="com.tests.LoginTests">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;apple&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23730/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 8e9a391e-c9f3-4df2-a103-2873891e4df4"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'apple', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23730/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 8e9a391e-c9f3-4df2-a103-2873891e4df4
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+  org.openqa.selenium.ie.InternetExplorerDriver.getScreenshotAs(InternetExplorerDriver.java:194)
+  com.tests.LoginTests.tearDown(LoginTests.java:37)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+  org.testng.TestRunner.privateRun(TestRunner.java:774)
+  org.testng.TestRunner.run(TestRunner.java:624)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+  org.testng.SuiteRunner.run(SuiteRunner.java:261)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+  org.testng.TestNG.run(TestNG.java:1048)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="tearDown" time="0.000" classname="com.tests.LoginTests">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;apple&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23730/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 8e9a391e-c9f3-4df2-a103-2873891e4df4"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'apple', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23730/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 8e9a391e-c9f3-4df2-a103-2873891e4df4
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+  org.openqa.selenium.ie.InternetExplorerDriver.getScreenshotAs(InternetExplorerDriver.java:194)
+  com.tests.LoginTests.tearDown(LoginTests.java:37)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+  org.testng.TestRunner.privateRun(TestRunner.java:774)
+  org.testng.TestRunner.run(TestRunner.java:624)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+  org.testng.SuiteRunner.run(SuiteRunner.java:261)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+  org.testng.TestNG.run(TestNG.java:1048)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="tearDown" time="0.000" classname="com.tests.LoginTests">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;apple&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23730/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 8e9a391e-c9f3-4df2-a103-2873891e4df4"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'apple', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23730/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 8e9a391e-c9f3-4df2-a103-2873891e4df4
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+  org.openqa.selenium.ie.InternetExplorerDriver.getScreenshotAs(InternetExplorerDriver.java:194)
+  com.tests.LoginTests.tearDown(LoginTests.java:37)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+  org.testng.TestRunner.privateRun(TestRunner.java:774)
+  org.testng.TestRunner.run(TestRunner.java:624)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+  org.testng.SuiteRunner.run(SuiteRunner.java:261)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+  org.testng.TestNG.run(TestNG.java:1048)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="testLogin" time="30.228" classname="com.tests.LoginTests">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;apple&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23730/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 8e9a391e-c9f3-4df2-a103-2873891e4df4"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'apple', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23730/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 8e9a391e-c9f3-4df2-a103-2873891e4df4
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+  org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:320)
+  com.common.CommonMethods.verifyText(CommonMethods.java:121)
+  com.pageobject.HomePage.<init>(HomePage.java:24)
+  com.tests.LoginTests.testLogin(LoginTests.java:49)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+  org.testng.TestRunner.privateRun(TestRunner.java:774)
+  org.testng.TestRunner.run(TestRunner.java:624)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+  org.testng.SuiteRunner.run(SuiteRunner.java:261)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+  org.testng.TestNG.run(TestNG.java:1048)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="setUp" time="0.0" classname="com.tests.LoginTests">
+          <skipped />
+    </testcase>
+            <testcase name="setUp" time="0.0" classname="com.tests.LoginTests">
+          <skipped />
+    </testcase>
+            <testcase name="testLoginError" time="0.0" classname="com.tests.LoginTests">
+          <skipped />
+    </testcase>
+            <testcase name="testLoginbadpass" time="0.0" classname="com.tests.LoginTests">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

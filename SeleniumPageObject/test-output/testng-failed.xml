@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="none">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.testng.reporters.FailedReporter"/>
+  </listeners>
+  <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.tests.CreateAccountTest">
+      <class name="com.tests.LoginTests">
         <methods>
-          <include name="wrongln"/>
-          <include name="wrongfn"/>
-          <include name="setUp"/>
+          <include name="testLogin"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testLoginError"/>
+          <include name="testLoginbadpass"/>
         </methods>
-      </class> <!-- com.tests.CreateAccountTest -->
+      </class> <!-- com.tests.LoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+</suite> <!-- Failed suite [Suite1] -->

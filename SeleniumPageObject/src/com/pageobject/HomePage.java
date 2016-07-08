@@ -21,9 +21,10 @@ public class HomePage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 		String ExpectedText="Welcome to iBusiness";
-	    String ActualText=driver.findElement(By.cssSelector("h1")).getText();
-	    System.out.println("ExpectedText is="+ExpectedText+"\n"+"ActualText is="+ActualText);
-	    Assert.assertEquals(ExpectedText,ActualText);
+		CM.verifyText(ExpectedText);
+	   // String ActualText=driver.findElement(By.cssSelector("h1")).getText();
+	   // System.out.println("ExpectedText is="+ExpectedText+"\n"+"ActualText is="+ActualText);
+	   // Assert.assertEquals(ExpectedText,ActualText);
 	}
 	
 	public void clickLogyourselfLink(){

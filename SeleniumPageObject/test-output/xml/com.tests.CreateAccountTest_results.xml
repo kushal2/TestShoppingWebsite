@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.143">
+  <properties />
+  
+  
+            <testcase name="wrongfn" time="1.823" classname="com.tests.CreateAccountTest" />
+                <testcase name="wrongln" time="1.934" classname="com.tests.CreateAccountTest" />
+                <testcase name="validsignup" time="4.386" classname="com.tests.CreateAccountTest" />
+      
+</testsuite>

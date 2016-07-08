@@ -20,6 +20,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
@@ -40,12 +41,18 @@ public class CommonMethods {
 			System.out.println("opening browser");
 		}else if (browserType.contentEquals("Chrome")){
 			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-	
 			DesiredCapabilities Capabilities = DesiredCapabilities.chrome();
 	   		Capabilities.setCapability("chrome.switches", Arrays.asList("--start-maximized"));
 	   		driver = new ChromeDriver(Capabilities); 
 	   		System.out.println("opening browser");
-		}else{
+		}else if (browserType.contentEquals("IE")){
+			System.setProperty("webdriver.ie.driver", "./drivers/IEDriverServer.exe");
+			DesiredCapabilities Capabilities = DesiredCapabilities.internetExplorer();
+	      	Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+	      	    driver = new InternetExplorerDriver();    
+	   		System.out.println("opening browser");
+		}
+		else{
 			System.out.println("Please select the Firefox or Chome Browser");
 			Assert.fail("Browser not selected");
 		}

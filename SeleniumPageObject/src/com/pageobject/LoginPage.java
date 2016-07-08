@@ -1,5 +1,6 @@
 package com.pageobject;
 
+import org.apache.logging.log4j.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -7,34 +8,30 @@ import com.common.CommonMethods;
 
 public class LoginPage  {
 	public CommonMethods CM;
-	
-	
 	private WebDriver driver;
+	//Logger logger= Logger.getLogger(LoginPage.class);
+	private Logger logger;
 	
 	public  LoginPage(WebDriver driver){
+		logger=LogManager.getLogger(LoginPage.class);
 		CM=new CommonMethods(driver);
 		this.driver=driver;
 		String expected="Welcome, Please Sign In";
 		CM.verifyText(expected);
 	}
-
-	
-
-	
    public void clickSignIn(){
 		driver.findElement(By.xpath("//*[@id='tdb5']/span[2]")).click();
-		System.out.println("click the sign in ");
-		
-	}
+		logger.info("click the sign in");
+   	}
 	
 	public void enterEmailID(String stext ){
 		driver.findElement(By.name("email_address")).sendKeys(stext);
-		System.out.println("entering the username ");
+		logger.info("entering the username ");
 	}
 	
    public void enterPWD(String stext ){
 	   driver.findElement(By.name("password")).sendKeys(stext);
-		System.out.println("entering the pwd ");
+	   logger.info("entering the pwd ");
 	}
    
    public void Login(String Username, String PWD){

@@ -1,7 +1,12 @@
 package com.tests;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,6 +17,7 @@ import com.pageobject.HomePage;
 import com.pageobject.LoginPage;
 
 public class LoginTests  {
+	private static int testno = 0;
 	private WebDriver driver;
 	public String getURL;
 	public LoginPage LoginPage;
@@ -27,7 +33,12 @@ public class LoginTests  {
 		CM.goToURL(CM.pro("config.properties").getProperty("url"));
 		}
 	@AfterMethod(alwaysRun=true)
-	public void tearDown(){
+	public void tearDown() throws IOException{
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	    String filepath="screenshots\\Testno"+Integer.toString(testno);
+	    testno++;
+	    String filename=filepath+"_"+CreateAccountTest.class;
+	    FileUtils.copyFile(scrFile, new File(filename));
 		CM.closeBrowser();
 		
 	}
